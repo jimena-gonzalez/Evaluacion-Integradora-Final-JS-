@@ -1,0 +1,962 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffc2cc;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+  align-self: center;
+  width: 100%;
+  height: auto;
+  margin: 4% 0;  
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  align-self: flex-start;
+  width: 100%;
+}
+
+/***********/
+section {
+  text-align: center;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/******************************* ESTILOS HEADER *******************************/
+.header {
+  background-color: #FF6161;
+  color: white;
+  padding: 2rem 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-botonera-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;/*  alinear al centro */
+
+  flex-wrap: wrap;
+}
+
+.logo img{
+  align-self: center;
+  max-width: 100%;
+}
+
+/* todos los "ul" que esten dentro de "menu" */
+.botonera ul, .botonesGenericos ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.botonera ul li {
+  display: inline-block;  /* mostrar uno al lado del otro*/
+  text-align: center;
+}
+
+/* enlaces del menu */
+.botonera ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+  /*font-family: 'Courier Prime', monospace;*/
+}
+
+.botonera ul li a:hover, #mensaje_button p a:hover, input[type=submit]:hover, .botonesGenericos li a {
+    background-color: black;
+    color:pink;
+    transition: all 0.4s linear; 
+}
+
+.botonesGenericos li {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+  text-align: center;
+  background-color: black;
+}
+
+footer {
+  /*position:fixed;
+  bottom: 0;*/
+  align-self: flex-end; /*sticky footer*/
+}
+/******************************* ESTILOS FOOTER *******************************/
+.pie_de_pagina {
+    width: 100%;
+}
+
+#footer_top {/* centrar enlaces */
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #E1E1E1;
+   
+    align-items: center;
+    justify-content: center;
+    /* lo alineamos al centro */
+    flex-wrap: wrap;
+}
+
+#footer_top nav {
+    padding: 5px;
+}
+
+#footer_top ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#footer_top ul li {
+  display: inline-block;  /* mostrar uno al lado del otro*/
+  align-items: center;
+}
+
+#footer_top ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+}
+
+#footer_top ul li a:hover  {
+    background-color: black;
+    color:pink;
+    transition: all 0.4s linear; 
+}
+
+#footer_bottom {
+    background-color: #414141; 
+    text-align: center;
+    font-size: 12px;
+    color: #E1E1E1;
+    padding: 2rem 0;
+}
+
+#footer_bottom p{
+    margin: 0;
+}
+
+/************************************ ESTILOS CONTENIDO ************************************/
+.welcome {
+    background-color: #ADEAE5;
+    padding: 5%;
+    color: #FF6161;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%; 
+}
+
+.welcome h3,
+.welcome h4,
+.welcome p {
+    margin: 10px;
+}
+
+#descuento {
+    margin-top: 3%;
+    width: 100%;   
+}
+#descuento img{
+    width: 100%;
+    border-radius: 25px;   
+}
+
+/* Estilos Seccion 'Nosotros' */
+#txt_our_1 {
+  width: 260px;
+  height: 450px;
+  background-color: #D5948E;
+
+  float: left;
+  position: relative;
+
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#img_our_1 {
+  background-image: url(../img/chef.jpg);
+}
+
+#img_our_1 , #img_form{
+  width: 695px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#img_form {
+  background-image: url(../img/background.jpg);
+}
+
+#txt_our_2 {
+  width: 260px;
+  height: 450px;
+
+  background-color: #ADEAE5;
+
+  float: left;
+  position: relative;
+
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#txt_our_1 h2, #txt_our_2 h2 {
+    font-weight: bold;
+    color:#515552;
+    text-align: center;
+    padding: 25px;
+    font-size: 50px;
+}
+
+#img_our_2, #img_nosotros {
+  background-size: cover;
+  background-position: center;
+  float: left;
+  position: relative;
+
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#img_our_2 {
+  width: 695px;
+  height: 450px; 
+  background-image: url(../img/logo.jpg);
+}
+
+#img_nosotros, #img_nosotros img {
+  width: 678px;
+  height: 460px;
+}
+
+#txt_our_1 p, #txt_our_2 p{
+  color:#000;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+
+#containerOur {
+  max-width: 80%;
+  margin: 0;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+/* Estilos Seccion 'Mas de Nosotros' */
+.hashtag {
+  
+  height: 150px;
+  width: 250px;
+  background-color: #ADEAE5;
+
+  float: left;
+  position: relative;
+
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.hashtag  h2 {
+  font-weight: bold;
+  color:#515552;
+  text-align: center;
+  padding: 25px;
+  font-size: 50px;
+}
+
+/* Estilos Seccion 'Menues' */
+.bannerGenerico, #menu {
+  background-color: #D5948E; /* #eb0000 */
+  padding: 5%;
+  border-radius: 25px;
+  width: 100%; 
+  /*vertical-align: center;*/
+}
+
+.bannerGenerico h2, #menu h2{
+  font-weight: bold;
+  color:#515552;
+  text-align: center;
+  padding: 5px;
+  font-size: 50px;  
+}
+
+.bannerGenerico:last-child {
+  margin-top: 5px;
+}
+
+.grupoPack h2{
+  font-weight: bold;
+  color:#515552;
+  text-align: center;
+  font-size: 45px;  
+}
+
+.bannerGenerico p, .grupoPack p {
+  text-align: justify;
+  font-size: 20px;  
+}
+
+.grupoPack p {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.grupoPack {
+  background-color: #ADEAE5;
+  height: 140px;
+  margin: 10px 10px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 25px;
+}
+
+.servicio_der, .servicio_centro, .servicio_izq {  
+  width: 300px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px; 
+
+  float: left;
+
+
+}
+
+.servicio_izq h2 {
+  font-weight: bold;
+  color:#515552;
+  text-align: center;
+  padding: 5px;
+  font-size: 50px;    
+}
+
+/* Estilos Sección 'Contacto'*/
+
+/*#contacto p*/
+/* Lo pongo con JS
+.parrafoContacto { 
+  padding-bottom: 15px;
+  margin: 0;
+}
+*/
+
+#contacto, #mensaje_button{
+  text-align: center;
+}
+  
+#mensaje_button p {
+  max-width: 80%;
+  margin: 25px auto;
+}
+
+#mensaje_button p a {
+  max-width: 80%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  color: pink;
+  background-color: black;  
+}
+
+.incrementarTam:hover{
+  -moz-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  transition: 1s;
+}
+
+/* Estilos Seccion 'Menu' */
+#datos_menu {
+    
+    background-color: #ADEAE5;
+    padding: 5%;
+    color: #FF6161;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%; 
+
+}
+
+#imagen_pack_elegido {
+    margin-top: 3%;
+    width: 100%;   
+}
+#imagen_pack_elegido img{
+    width: 100%;
+    border-radius: 25px;   
+}
+
+/* ESTILOS FORMULARIOS */
+form {
+  color: black;
+  width: 400px;
+  margin: 0 auto;
+  font-family: 'Oswald';
+  margin-top: 50px;
+  border-width: 10px;
+  border-style: double;
+  border-color: white;
+}
+
+input, textarea {
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+label, input{
+  font-size: 15px;
+}
+
+textarea {
+   resize: vertical;
+}
+
+input[type="checkbox"] {
+  display: inline;
+  margin: 5px;
+  width: auto; 
+}
+
+input[type="submit"] {
+  width: 200px;
+}
+
+/*.individual, .grupales {
+  display: none;
+}*/
+
+/*************************************************************************************/
+/************************************* REPONSIVE *************************************/
+/*************************************************************************************/
+
+/* Caracteristicas cuando tenga un ancho maximo de 600px */
+@media all and (max-width: 599px) {
+
+  section {
+    width: 90%;
+    height: auto;
+  }
+  
+  /************************************ ESTILOS RESPONSIVE HEADER ************************************/
+  .logo{
+    width:  100%;
+    margin-bottom: 1rem;
+  }
+  .logo img {
+    display: block;
+    margin: auto;
+  }
+  .botonera{
+      width: 100%;
+      /*font-size:20px;*/
+      /*font-size:80%;*/
+      font-size: 4vw;
+  }
+
+  .botonesGenericos {
+    font-size: 1.2rem;
+  }
+
+  .botonera ul, .botonera ul li, .botonesGenericos li{
+      display: block;
+  }
+  /* enlaces del menu */
+  .botonera ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+  }
+  .botonera ul li a:hover {
+    background-color: black;
+    color:pink;
+    transition: all 0.4s linear; 
+  }
+
+  /************************************ ESTILOS RESPONSIVE FOOTER  ************************************/
+  #footer_top {
+    width: 100%;
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #E1E1E1;
+    height: auto;
+    align-items: center;
+  }
+  #footer_top ul, #footer_top ul li{
+    display: block;
+  }
+  /* enlaces del menu */
+  #footer_top ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+  }
+  #footer_top ul li a:hover {
+    background-color: black;
+    color:pink;
+    transition: all 0.4s linear; 
+  }
+
+  #footer_bottom {
+    font-size: 4vw;
+  }
+  /************************************ ESTILOS RESPONSIVE CONTENIDO ************************************/
+  #containerOur {
+      max-width: 80%;
+      margin: 0 auto;
+  }
+
+  #txt_our_1{
+    width: 100%;
+    height: auto;
+    background-color: #D5948E;
+    float: none;
+    margin: 0;
+  }
+
+  #txt_our_2 {
+    width: 100%;
+    height: auto;
+    background-color: #ADEAE5;
+    float: none;
+    margin: 0;
+  }
+
+  #txt_our_1 h2, #txt_our_2 h2{
+      font-weight: bold;
+      color:#515552;
+      text-align: center;
+      padding: 0px;
+      font-size: 42px;
+  }
+
+  #txt_our_2 p, #txt_our_1 p {
+      color:#000;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 5px;
+  }
+
+  #img_our_1 {
+      width: 100%;
+      height: 220px;
+      float: none;
+      background-image: url(../img/chef.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 30px;
+  }
+
+  #img_our_2, #img_nosotros {
+      width: 100%;
+      height: 220px;
+      float: none;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 30px;
+  }
+
+  #img_nosotros img{
+    width: 100%;
+    height: 220px;
+    margin:0;
+  }
+
+  #img_our_2 {
+      background-image: url(../img/logo.jpg);
+  }
+
+  /* Estilos Seccion 'Menues' */
+  .bannerGenerico p, .grupoPack p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .grupoPack p {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+
+  .bannerGenerico h2, #menu h2 {
+    font-weight: bold;
+    color:#515552;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;  
+  }
+
+
+  .grupoPack h2 {
+    font-weight: bold;
+    color:#515552;
+    text-align: center;
+    font-size: 18px;    
+  }
+
+  .grupoPack {
+    height: auto;
+  }
+
+  .servicio_izq {
+    width: 80%;
+    padding: 2.5px 5px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+  }
+
+  .servicio_centro {
+    /*display: none;*/
+    width: 80%;
+    padding: 2.5px 5px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+  }
+
+  .servicio_der {
+    display: none;
+  }
+
+  /* Estilos Seccion 'Contacto' */
+  #contacto, #mensaje_button {
+    font-size: 4vw;
+  }
+
+  /* Estilos Seccion 'Mas de Nosotros' */
+  .hashtag {
+    width: 100%;
+    height: auto;
+    background-color: #ADEAE5;
+    float: left;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .hashtag  h2 {
+    font-weight: bold;
+    color:#515552;
+    text-align: center;
+    padding: 25px;
+    font-size: 7vw;
+  }
+
+/* ESTILOS FORMULARIOS */
+  form {
+    width: 90%;
+    border-width: 5px;
+  }
+
+  input, textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  label, input{
+    font-size: 4vw;
+  }
+
+  select {
+    width: 80%;
+  }
+
+  input[type="submit"] {
+    width: 80%;
+    font-size: 10px;
+  }
+
+
+}
+
+/* Caracteristicas cuando tenga un ancho maximo de 1024px */
+@media all and (min-width:600px) and (max-width: 1024px) {
+
+  main {
+    height:auto;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  /************************************ ESTILOS RESPONSIVE HEADER ************************************/
+  .logo{
+    width: 100%;
+  }
+  .logo img {
+    display: block;
+    margin: auto;
+  }
+  .botonera{
+      width: 100%;
+      margin: auto;
+      margin-top: 2px; /* para que cuando se achique, los li no toquen al logo */
+      display: block;
+  }
+  .botonera ul  {
+      display: block;
+      text-align: center;
+  }
+
+
+  /************************************ ESTILOS RESPONSIVE FOOTER  ************************************/
+  #footer_top{
+      width: 100%;
+      margin: auto;
+      display: block;
+  }
+  #footer_top ul  {
+      display: block;
+      text-align: center;
+  }
+
+  /************************************ ESTILOS RESPONSIVE CONTENIDO  ************************************/
+  #containerOur {
+    max-width: 80%;
+    /*max-width: 950px;*/
+    align-items: center;
+  }
+
+  #txt_our_1 {
+    max-width: 220px;
+    height: 450px;
+    background-color: #D5948E;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  #img_our_1 {
+    max-width: 350px;
+    height: 450px;
+    background-image: url(../img/chef.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  #txt_our_2 {
+    max-width: 220px;
+    height: 450px;
+    background-color: #ADEAE5;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  #txt_our_1 h2, #txt_our_2 h2 {
+      font-weight: bold;
+      color:#515552;
+      text-align: center;
+      padding: 25px;
+      font-size: 30px;
+  }
+
+  #img_our_2, #img_nosotros {
+    max-width: 350px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    position: relative;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  #img_our_2 {
+    background-image: url(../img/logo.jpg);
+  }
+
+  #img_nosotros {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  #txt_our_1 p, #txt_our_2 p{
+    color:#000;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Estilos Seccion 'Mas de Nosotros' */
+  .hashtag {
+    
+    height: 148px;
+    width: 250px;
+    background-color: #ADEAE5;
+
+    float: left;
+    position: relative;
+
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .hashtag  h2 {
+    font-weight: bold;
+    color:#515552;
+    text-align: center;
+    padding: 25px;
+    font-size: 50px;
+  }
+
+  /* Estilos Seccion 'Menues' */
+  .bannerGenerico p, .grupoPack p {
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .grupoPack p {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    margin: 25px;
+   }
+
+  .grupoPack {    
+    height: auto;
+    width: 100%;
+  }
+
+  .servicio_der, .servicio_centro, .servicio_izq {
+    width: auto;
+    padding: 2.5px 5px;
+    margin: auto;
+  }
+
+  .servicio_izq {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;  
+  }
+
+  .servicio_centro {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;  
+  }
+
+  .servicio_der {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #contacto, #mensaje_button {
+    font-size: 4vw;
+  }
+
+  /* ESTILOS FORMULARIOS */
+  form {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-width: 10px;
+    font-size: 25px;
+  }
+
+  input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  select {
+    width: 35%;
+  }
+
+  label, input, select, textarea {
+    font-size: 23px;
+  }
+
+  input[type="submit"] {
+    width: 200px;
+  }
+
+  input[type="checkbox"] {
+    width: 23px;
+    height: 23px;
+  }
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>La Vianda</title>
+		
+		<meta charset="utf-8">
+		<meta name="keywords" content="vianda, comida, delivery, zona oeste">
+		<meta name="description" content="El lugar para alimentarte como en casa...">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/general-styles.css">
+		<link rel="stylesheet" type="text/css" href="css/iconos.css">
+		<link rel="stylesheet" href="lightbox/css/lightbox.css">
+		<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container logo-botonera-container">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt="logo La Vianda microemprendimiento"></a>
+
+				<nav class="botonera">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="nosotros.html">Nosotros</a></li>
+						<li><a href="servicios.html">Servicios</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>	
+		
+		<main class="main">
+
+			<section id="containerOur">
+
+				<div id="img_nosotros" class="incrementarTam">
+
+					<a href="img/nosotros/cocinaVegetales.jpg" data-lightbox="galeria" data-title="Cocina de Vegetales"><img src="img/nosotros/cocinaVegetales.jpg" alt="Cocina de vegetales - Inicio galeria" title="Haga clic para abrir la galeria"></a>
+
+					<a href="img/nosotros/cocinaCarnes.jpg" data-lightbox="galeria" data-title="Cocina de Carnes"></a>
+
+					<a href="img/nosotros/deliveryCovid2.jpg" data-lightbox="galeria" data-title="Protegiendo a nuestro staff"></a>
+
+					<a href="img/nosotros/deliveryCovid1.jpg" data-lightbox="galeria" data-title="Protegiendote incluso en el delivery"></a>	
+
+					<a href="img/nosotros/proximamente.jpg" data-lightbox="galeria" data-title="Inaguraremos un bar. Proximamente..."></a>
+								
+				</div>
+				
+				<div class="hashtag"><h2>#SANO</h2></div>
+				<div class="hashtag"><h2>#RICO</h2></div>
+				<div class="hashtag"><h2>#EN_CASA</h2></div>
+
+			</section>
+		</main>
+
+		<footer class="pie_de_pagina">
+			<div id="footer_top">
+				<nav>
+					<ul>
+						<li><a href="#" target="_blank"><span class="icon-facebook2"></span></a></li>
+						<li><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
+						<li><a href="#" target="_blank"><span class="icon-twitter"></span></a></li>
+						<li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
+						<li><a href="#" target="_blank"><span class="icon-youtube"></span></a></li> 
+					</ul>
+				</nav>
+			</div>
+			<div id="footer_bottom">
+				 <p><em>La Vianda</em> - Todos los derechos reservados - 2020</p>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="lightbox/js/lightbox-plus-jquery.js"></script>
+		<script type="text/javascript">
+			//Basandome en funcionalidades de JQuery que busqué en internet, logré...
+			$(document).ready(function(){
+				$(".hashtag:first h2").hover(
+					function(){$(".hashtag:first").css("background-color", "#D9FF7C");},
+					function(){$(".hashtag:first").css("background-color", "#ADEAE5");}
+				);
+			});
+
+			$(document).ready(function(){
+				$(".hashtag:odd h2").hover(
+					function(){$(".hashtag:odd").css("background-color", "#FFA07C");},
+					function(){$(".hashtag:odd").css("background-color", "#ADEAE5");}
+				);
+			});
+
+			$(document).ready(function(){
+				$(".hashtag:last h2").hover(
+					function(){$(".hashtag:last").css("background-color", "#FFC57C");},
+					function(){$(".hashtag:last").css("background-color", "#ADEAE5");}
+				);
+			});
+		</script>
+
+	</body>
+</html>

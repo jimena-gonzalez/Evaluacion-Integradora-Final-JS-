@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>La Vianda</title>
+		
+		<meta charset="utf-8">
+		<meta name="keywords" content="vianda, comida, delivery, zona oeste">
+		<meta name="description" content="El lugar para alimentarte como en casa...">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/general-styles.css">
+		<link rel="stylesheet" type="text/css" href="css/iconos.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container logo-botonera-container">
+				<a href="index.html" class="logo"><img src="img/logo.png" alt="logo La Vianda microemprendimiento"></a>
+
+				<nav class="botonera">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="nosotros.html">Nosotros</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>	
+		
+		<main class="main">
+
+			<div class="container">
+				<section class="servicios" class="incrementarTam">
+					<h2>Servicios</h2>
+					<p>Ofrecemos menues y packs completos (incluye bebida) para todas las edades y especialidades. No solo almuerzo o cena, sino tambien desayuno y merienda, atendiendo las 24hs los 7 días de la semana, y ofreciendo el Delivery sin cargo (Zona Oeste).</p>
+					<p></p>
+					<ul class="botonesGenericos">
+						<li onclick="mostrarPropuestas('individual');"><a href="#hide">INDIVIDUAL</a></li>
+						<li onclick="mostrarPropuestas('grupales');"><a href="#hide">GRUPAL</a></li>
+					</ul>
+				</section>
+				<div class="hide">
+					<section class="grupoPack incrementarTam individual">
+				        <div class="servicio_izq">
+				          <h2>INFANTIL</h2>
+				        </div>
+				        <div class="servicio_centro">
+				          <p>Ofrecemos una variedad de menús, ya sean saludables como los más buscados por los niños. Además, hay menus con sorpresa.</p>
+				        </div>
+				        <div class="servicio_der">
+				        	<p>Este servicio está contemplado para niños desde el 1ro año de edad hasta los 12 años, ofreciendo la misma oferta pero en pack mediano para adolecentes.</p>
+				        </div>
+			      	</section>
+			      
+			    	<section class="grupoPack incrementarTam individual">
+				    	<div class="servicio_izq">
+				          <h2>ADULTOS</h2>
+				        </div>
+				        <div class="servicio_centro">
+				        	<p>Encontrarás una variedad de carnes (rojas, pescado), ensaladas, tartas y comidas tradicionales.</p>
+				        </div>
+				        <div class="servicio_der">
+				        	<p>Todos los platos tienen guarniciones mencionando como principales: papa, ensaladas, aderezos.</p>
+				        </div>
+			     	</section>
+
+				      <section class="grupoPack incrementarTam grupales">
+					        <div class="servicio_izq">
+					          <h2>FAMILIAR</h2>
+					        </div>
+					        <div class="servicio_centro">
+					        	<p>Les ofrecemos una variedad de comidas tradicionales de la mesa argentina para disfrutar juntos en familia.</p>
+					        </div>
+					        <div class="servicio_der">
+					        	<p>Desde pizzas y empanadas los fines de semana, al asado y ensalada de los domingos, todo en un solo lugar.</p>
+					        </div>
+				      </section>
+
+				      <section class="grupoPack incrementarTam grupales">
+					        <div class="servicio_izq">
+					          <h2>PARTY</h2>
+					        </div>
+					        <div class="servicio_centro">
+					        	<p>Ya sean hamburguesas, un asado multitudinario, pizzas, empanadas, o incluso algo dulce como una torta, cualquier comida sirve para festejar.</p>
+					        </div>
+					        <div class="servicio_der">
+					        	<p>Que la cuarentena no te pare, hace una fiesta por videollamada y disfruta de los mejores descuentos todos los días en el pack de Party.</p>
+					        </div>
+				      </section>
+
+				      <section class="grupoPack incrementarTam individual">
+					        <div class="servicio_izq">
+					          <h2>ESPECIAL</h2>
+					        </div>
+					        <div class="servicio_centro">
+					        	<p>Quizas estas a dieta. O quién no prefiere lo natural? Por ello, te ofrecemos un conjunto de ensaladas y tartas más saludables.</p>
+					        </div>
+					        <div class="servicio_der">
+					        	<p>Además, aquellas personas que deban consumir alimentos sin TACC o que prefieran una preparación mas saludable (sin sodio, etc), lo pueden solicitar.</p>
+					        </div>
+				     	</section>
+
+					</div>
+					<section class="bannerGenerico" class="incrementarTam">
+						<h3><a href="menu.html"><-- Conoce más de nuestros menues --></a></h3>
+					</section>					
+			</div>
+		</main>
+
+		<footer class="pie_de_pagina">
+			<div id="footer_top">
+				<nav>
+					<ul>
+						<li><a href="#" target="_blank"><span class="icon-facebook2"></span></a></li>
+						<li><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
+						<li><a href="#" target="_blank"><span class="icon-twitter"></span></a></li>
+						<li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
+						<li><a href="#" target="_blank"><span class="icon-youtube"></span></a></li> 
+					</ul>
+				</nav>
+			</div>
+			<div id="footer_bottom">
+				 <p><em>La Vianda</em> - Todos los derechos reservados - 2020</p>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/scriptMenues.js"></script>
+	</body>
+</html>
